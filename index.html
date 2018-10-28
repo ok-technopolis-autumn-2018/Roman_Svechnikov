@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO MVC</title>
+</head>
+<body>
+
+<h1>todos</h1>
+
+<div class="todo-board">
+
+    <form class="todo-creator">
+        <button class="todo-check-all" aria-label="Check all items as done"></button>
+        <input class="todo-text-input" type="text" placeholder="What needs to be done?" aria-label="Input new todo name"/>
+    </form>
+
+    <div class="todo-list">
+        <div class="todo-item">
+            <input type="checkbox" class="todo-item_ready-marker" aria-label="Mark todo as ready"/>
+            <div class="todo-item_text">HTML</div>
+            <button class="todo-item_remove" aria-label="Delete todo"></button>
+        </div>
+        <div class="todo-item">
+            <input type="checkbox" class="todo-item-ready-marker" checked aria-label="Mark todo as unready"/>
+            <div class="todo-item_text">CSS</div>
+            <button class="todo-item_remove" aria-label="Delete todo"></button>
+        </div>
+        <div class="todo-item">
+            <input type="checkbox" class="todo-item-ready-marker" aria-label="Mark todo as ready"/>
+            <div class="todo-item_text">JS</div>
+            <button class="todo-item_remove" aria-label="Delete todo"></button>
+        </div>
+        <div class="todo-item">
+            <input type="checkbox" class="todo-item-ready-marker" aria-label="Mark todo as ready"/>
+            <div class="todo-item_text">JS tools</div>
+            <button class="todo-item_remove" aria-label="Delete todo"></button>
+        </div>
+    </div>
+
+    <div class="todos-toolbar">
+        <div class="todos-toolbar_unready-counter">3 items left</div>
+        <div class="filters todos-toolbar_filters">
+            <button class="filters-item __selected" aria-label="Filter: All, is selected">All</button>
+            <button class="filters-item" aria-label="Filter: Active">Active</button>
+            <button class="filters-item" aria-label="Filter: Completed">Completed</button>
+        </div>
+        <button class="todos-toolbar_clear-completed">Clear completed</button>
+    </div>
+
+</div>
+
+</body>
+</html>
